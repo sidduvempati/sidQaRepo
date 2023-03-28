@@ -135,3 +135,45 @@ print(drinks)
 print(drinks.pop("non-alcoholic"))
 print(drinks)
 print(drinks.pop("non-alcoholic", "not-found"))
+
+# Tuples
+# We cant change data in a tuple
+# () instead of [] or use nothing at all
+
+shapes = ("square", "circle", "triangle")
+shapes1 = "square", "circle", "hexagon"
+
+print(type(shapes))
+print(type(shapes1))
+
+#shapes.append("rectangle")
+print(shapes)
+
+# Make its clear we dont want the values to change
+# less memory to store data
+# speed - tuples are quicker than lists - its very minimal. 
+
+# sets
+# unordered - no indexing
+# no duplicate values
+# cant be nested 
+# {}
+
+items = {"apple", "banana", "pear"}
+print(type(items))
+
+# dictionary exercie
+
+books = {"the Handmaiden's Tale": "margaret Atwood", "The hobbit": "Tolkien", \
+            "Charlie and the chocolate factory": "roald Dahl"}
+
+print(books["the Handmaiden's Tale"])
+
+# Make your own books dictionary, with 3 authors as keys and multiple books as values.
+# Use an input() asking for author name and print as a string the list of books by 
+# the author.  .join 
+
+books_dict = {"author1": ["book1", "book2"], "author2": ["book3", "book4"]}
+
+y = input("Enter author name: ")
+print(", ".join(books_dict[y])) 
