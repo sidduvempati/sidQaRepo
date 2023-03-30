@@ -97,9 +97,11 @@ height = 1.7
 
 print("my name is {}, i am {} years old, my height is {} meters".format(name, age, height))
 
+# also with a var:
 
+x = "my name is {}, i am {} years old, my height is {} meters"
 
-
+print(x.format(name, age, height))
 
 
 
