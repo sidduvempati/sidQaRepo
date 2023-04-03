@@ -154,7 +154,7 @@ lines[0] = "this is a new line" # replaces first line
 
 file = open("teams.txt", "w")
 for i in range(len(lines)):
-    if i == len(lines): # checks if last line
+    if i == len(lines)-1: # checks if last line
         file.write(lines[i]) # writes line without newline character
     else:
         file.write(lines[i].strip() + "\n") # prints lines with newline character
@@ -166,7 +166,12 @@ for line in file:
     print(line.strip())
 file.close()
 
+# with statement - close automatically
 
+with open("filename.txt", "w") as file: # aliasing
+    for n in range(1,11):
+        newline = "this is line" + " " + str(n) + "\n"
+        file.write(newline)
 
 
 
