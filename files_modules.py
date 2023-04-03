@@ -101,19 +101,19 @@
 
 # Best way to edit:
 
-file = open("lines1.txt", "r")
+#file = open("lines1.txt", "r")
 
-outfile = ""
+#outfile = ""
 
-for line in range(1,10):
-    if line % 2 == 0: # takes even numbers
-        outfile += file.readline()
-    else:
-        file.readline() # skip over odd numbers
+#for line in range(1,10):
+#    if line % 2 == 0: # takes even numbers
+#        outfile += file.readline()
+#    else:
+#       file.readline() # skip over odd numbers
 
-file = open("lines1.txt", "w")
-file.write(outfile) # writes even numbers
-file.close()
+#file = open("lines1.txt", "w")
+#file.write(outfile) # writes even numbers
+#file.close()
 
 # exercise:
 
@@ -122,31 +122,27 @@ file.close()
 # Edit your teams.txt file so that the top line is replaced with "this is a new line"
 # print out the edited file line by line.  
 
+#1
 
-file = open....
-sports_teams = []
+file = open("teams.txt", "w")
+sports_teams = ["man utd", "man city", "real madrid", "barcelona", "charlton"]
 
 for i in sports_teams:
-    .....
+    newline = i + "\n"
+    file.write(newline)
 
-file.close
+file.close()
 
-open
-print
-close
+#2 
 
-open r
-lines = readlines()
-close
+file = open("teams.txt", "r")
 
-modify the list lines[0]
-open in w
+lines = file.readlines()
 
-for ......
+print(lines[0].strip()) # removes whitespace
+print(lines[3].strip())
 
-open r
-print
-
+file.close()
 
 
 
