@@ -20,3 +20,6 @@ def func(num):
 def test_answer():
     assert func(6) == 12 
 
+# pytest looks for files called test_*.py or *_test.py
+# pytest testing.py
+
