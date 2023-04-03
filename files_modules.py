@@ -144,8 +144,27 @@ print(lines[3].strip())
 
 file.close()
 
+#3+4
 
+file = open("teams.txt", "r")
+lines = file.readlines()
+file.close()
 
+lines[0] = "this is a new line" # replaces first line
+
+file = open("teams.txt", "w")
+for i in range(len(lines)):
+    if i == len(lines): # checks if last line
+        file.write(lines[i]) # writes line without newline character
+    else:
+        file.write(lines[i].strip() + "\n") # prints lines with newline character
+file.close()
+
+file = open("teams.txt", "r")
+
+for line in file:
+    print(line.strip())
+file.close()
 
 
 
